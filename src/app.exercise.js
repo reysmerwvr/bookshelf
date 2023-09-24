@@ -3,10 +3,10 @@ import {jsx} from '@emotion/core'
 
 import * as React from 'react'
 import * as auth from 'auth-provider'
-import {FullPageSpinner} from 'components/lib'
+import {FullPageSpinner} from './components/lib'
 import * as colors from './styles/colors'
 import {client} from './utils/api-client'
-import {useAsync} from 'utils/hooks'
+import {useAsync} from './utils/hooks'
 import {AuthenticatedApp} from './authenticated-app'
 import {UnauthenticatedApp} from './unauthenticated-app'
 
@@ -61,7 +61,7 @@ function App() {
           alignItems: 'center',
         }}
       >
-        <p>Uh oh... There's a problem. Try refreshing the app</p>
+        <p>Uh oh... There's a problem. Try refreshing the app.</p>
         <pre>{error.message}</pre>
       </div>
     )
